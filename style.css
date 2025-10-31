@@ -87,3 +87,29 @@ body {
     border-top: 1px solid #30363d;
     margin-top: 40px;
 }
+
+.Feature_List {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 12px;
+    color: #8b949e;
+}
+
+.Feature_List li {
+    margin-bottom: 8px;
+}
+
+.Feature_List li strong {
+    color: #c9d1d9;
+    font-weight: 600;
+}
+
+.Conclusion_Text {
+    margin-top: 16px;
+    color: #c9d1d9;
+}
+
+.Conclusion_Text strong {
+    color: #58a6ff;
+    font-weight: 600;
+}
