@@ -1,115 +1,241 @@
+:root {
+    --bg-dark: #0d1117;
+    --bg-medium: #161b22;
+    --bg-light: #21262d;
+    --border-color: #30363d;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --accent-blue: #58a6ff;
+    --accent-green: #3fb950;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
 body, h1, h2, h3, p, a {
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    line-height: 1.5;
-    color: #c9d1d9;
+    line-height: 1.6;
+    color: var(--text-primary);
 }
 
 body {
-    background-color: #0d1117;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #171d24 50%, var(--bg-dark) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .Container {
-    max-width: 960px;
+    max-width: 1024px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 32px;
 }
 
 .Header {
-    background-color: #161b22;
-    color: #c9d1d9;
-    padding: 16px 0;
-    border-bottom: 1px solid #30363d;
+    background-color: var(--bg-medium);
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px var(--shadow-color);
 }
 
 .Header_Content {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 8px;
+    gap: 16px;
+    margin-bottom: 12px;
 }
 
 .Header_Title {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #c9d1d9;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Header_Logo {
+    font-size: 2.5rem;
+    color: var(--accent-blue);
 }
 
 .Header_Subtitle {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 400;
-    color: #8b949e;
+    color: var(--text-secondary);
 }
 
 .MainContent {
-    padding: 40px 0;
+    flex-grow: 1;
+    padding: 60px 0;
 }
 
 .Section {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
 }
 
 .Section_Title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding-bottom: 8px;
-    margin-bottom: 24px;
-    border-bottom: 1px solid #30363d;
-    color: #c9d1d9;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid var(--accent-blue);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Section_Icon {
+    font-size: 1.8rem;
+    color: var(--accent-blue);
+}
+
+.Section_Subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-left: 8px;
 }
 
 .Card {
-    background-color: #161b22;
-    border: 1px solid #30363d;
-    border-radius: 6px;
-    padding: 24px;
-    margin-bottom: 16px;
-    box-shadow: none;
+    background-color: var(--bg-medium);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.Card_Animated:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+    border-color: var(--accent-blue);
 }
 
 .Card_Title {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    color: #58a6ff;
-    margin-bottom: 8px;
+    color: var(--accent-blue);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Card_Icon {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
 }
 
 .Card p {
-    color: #8b949e;
-}
-
-.Footer {
-    background-color: #0d1117;
-    color: #8b949e;
-    text-align: center;
-    padding: 40px 0;
-    border-top: 1px solid #30363d;
-    margin-top: 40px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
 }
 
 .Feature_List {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 12px;
-    color: #8b949e;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 16px;
+    color: var(--text-secondary);
 }
 
 .Feature_List li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.Feature_Icon {
+    font-size: 1.2rem;
+    color: var(--accent-green);
+    margin-top: 2px;
+    flex-shrink: 0;
 }
 
 .Feature_List li strong {
-    color: #c9d1d9;
+    color: var(--text-primary);
     font-weight: 600;
 }
 
 .Conclusion_Text {
-    margin-top: 16px;
-    color: #c9d1d9;
+    margin-top: 24px;
+    padding: 16px 24px;
+    background-color: var(--bg-light);
+    border-left: 4px solid var(--accent-blue);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .Conclusion_Text strong {
-    color: #58a6ff;
-    font-weight: 600;
+    color: var(--accent-blue);
+    font-weight: 700;
+}
+
+.Conclusion_Icon {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.Footer {
+    background-color: var(--bg-dark);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .Container {
+        padding: 0 16px;
+    }
+    .Header_Title {
+        font-size: 1.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Header_Logo {
+        font-size: 2rem;
+    }
+    .Header_Subtitle {
+        font-size: 1rem;
+    }
+    .Section_Title {
+        font-size: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .Section_Subtitle {
+        margin-left: 0;
+    }
+    .Card {
+        padding: 20px;
+    }
+    .Card_Title {
+        font-size: 1.3rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .Card_Icon {
+        font-size: 1.3rem;
+    }
+    .Conclusion_Text {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
 }

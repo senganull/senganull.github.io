@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Pages Demo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/build.css">
 </head>
 <body>
 
     <header class="Header">
         <div class="Container">
             <div class="Header_Content">
-                <h1 class="Header_Title">GitHub Pages Demo</h1>
+                <h1 class="Header_Title">
+                    <i class="octicon octicon-mark-github Header_Logo"></i> GitHub Pages Demo
+                </h1>
             </div>
             <p class="Header_Subtitle">これはGitHub Pagesで公開されているデモページです</p>
         </div>
@@ -21,8 +24,10 @@
         <div class="Container">
 
             <section class="Section">
-                <h2 class="Section_Title">GitHubとは？</h2>
-                <div class="Card">
+                <h2 class="Section_Title">
+                    <i class="octicon octicon-question Section_Icon"></i> GitHubとは？ <span class="Section_Subtitle">(スライド資料より)</span>
+                </h2>
+                <div class="Card Card_Animated">
                     <p>
                         GitHubは、プログラムのソースコードを保存・管理・共有できるクラウドサービスです。
                         世界中の開発者が利用する、開発プロジェクトの「拠点」のような場所です。
@@ -31,60 +36,76 @@
             </section>
 
             <section class="Section">
-                <h2 class="Section_Title">主な機能</h2>
+                <h2 class="Section_Title">
+                    <i class="octicon octicon-tools Section_Icon"></i> 主な機能 <span class="Section_Subtitle">(スライド資料より)</span>
+                </h2>
 
-                <div class="Card">
-                    <h3 class="Card_Title">核心機能「リポジトリ」 (ソースコード管理)</h3>
+                <div class="Card Card_Animated">
+                    <h3 class="Card_Title">
+                        <i class="octicon octicon-repo Card_Icon"></i> 核心機能「リポジトリ」 (ソースコード管理)
+                    </h3>
                     <p>
                         プロジェクトのファイル(ソースコード、画像など)を保存する場所です。
                         「いつ」「誰が」「何を」変更したか、すべての履歴(バージョン)を記録できます。
                     </p>
                     <ul class="Feature_List">
-                        <li>間違った変更をしても、過去の状態に簡単に戻せる。</li>
-                        <li>複数の開発者がいても、安全に共同作業ができる。</li>
+                        <li><i class="octicon octicon-history Feature_Icon"></i> 間違った変更をしても、過去の状態に簡単に戻せる。</li>
+                        <li><i class="octicon octicon-organization Feature_Icon"></i> 複数の開発者がいても、安全に共同作業ができる。</li>
                     </ul>
                 </div>
 
-                <div class="Card">
-                    <h3 class="Card_Title">タスク管理「Issues / Projects」</h3>
+                <div class="Card Card_Animated">
+                    <h3 class="Card_Title">
+                        <i class="octicon octicon-issue-opened Card_Icon"></i> タスク管理「Issues / Projects」
+                    </h3>
                     <p>
                         開発でやるべき作業(タスク)やバグの報告を「Issue (イシュー)」として登録・管理できます。
                         「Projects」機能を使うと、タスクをカンバンボード形式(「未着手」「作業中」「完了」)で管理できます。
                     </p>
                 </div>
                 
-                <div class="Card">
-                    <h3 class="Card_Title">その他の便利な機能</h3>
+                <div class="Card Card_Animated">
+                    <h3 class="Card_Title">
+                        <i class="octicon octicon-package Card_Icon"></i> その他の便利な機能
+                    </h3>
                     <ul class="Feature_List">
-                        <li><strong>GitHub Actions (自動化):</strong> コードが更新された時などに、テストやサーバーへの反映(デプロイ)といった作業を自動実行できます。</li>
-                        <li><strong>Pull Request (コードレビュー):</strong> 変更したコードを本体に取り込む前に、他の開発者が内容をチェック(レビュー)し、品質を保つための機能です。</li>
-                        <li><strong>Wiki (ドキュメント):</strong> プロジェクトの仕様書やマニュアル、メモなどをまとめておく場所として使えます。</li>
+                        <li><i class="octicon octicon-zap Feature_Icon"></i> <strong>GitHub Actions (自動化):</strong> コードが更新された時などに、テストやサーバーへの反映(デプロイ)といった作業を自動実行できます。</li>
+                        <li><i class="octicon octicon-git-pull-request Feature_Icon"></i> <strong>Pull Request (コードレビュー):</strong> 変更したコードを本体に取り込む前に、他の開発者が内容をチェック(レビュー)し、品質を保つための機能です。</li>
+                        <li><i class="octicon octicon-book Feature_Icon"></i> <strong>Wiki (ドキュメント):</strong> プロジェクトの仕様書やマニュアル、メモなどをまとめておく場所として使えます。</li>
                     </ul>
                 </div>
 
             </section>
 
             <section class="Section">
-                <h2 class="Section_Title">このデモページについて (GitHub Pages)</h2>
+                <h2 class="Section_Title">
+                    <i class="octicon octicon-globe Section_Icon"></i> このデモページについて <span class="Section_Subtitle">(GitHub Pages)</span>
+                </h2>
 
-                <div class="Card">
-                    <h3 class="Card_Title">Web公開「GitHub Pages」</h3>
+                <div class="Card Card_Animated">
+                    <h3 class="Card_Title">
+                        <i class="octicon octicon-file Card_Icon"></i> Web公開「GitHub Pages」 (スライド資料より)
+                    </h3>
                     <p>
                         リポジトリに保存したHTMLやCSS、画像ファイルを使って、Webサイトを無料でインターネットに公開できる機能です。
                         サーバーを自分で契約・設定しなくても、簡単に Webページを公開できます。
                     </p>
                 </div>
 
-                <div class="Card">
-                    <h3 class="Card_Title">簡単なセットアップ</h3>
+                <div class="Card Card_Animated">
+                    <h3 class="Card_Title">
+                        <i class="octicon octicon-gear Card_Icon"></i> 簡単なセットアップ (デモ)
+                    </h3>
                     <p>
                         リポジトリの 'Settings' タブから数クリックするだけで、
                         <code>github.io</code> のドメインを持つWebサイトを公開することが可能です。
                     </p>
                 </div>
                 
-                <div class="Card">
-                    <h3 class="Card_Title">このページのソースコード</h3>
+                <div class="Card Card_Animated">
+                    <h3 class="Card_Title">
+                        <i class="octicon octicon-code Card_Icon"></i> このページのソースコード (デモ)
+                    </h3>
                     <p>
                         このデモページのHTML/CSSは、GitHubリポジトリで公開されています。
                     </p>
@@ -94,13 +115,15 @@
 
 
             <section class="Section">
-                <h2 class="Section_Title">まとめ</h2>
-                <div class="Card">
+                <h2 class="Section_Title">
+                    <i class="octicon octicon-checklist Section_Icon"></i> まとめ <span class="Section_Subtitle">(スライド資料より)</span>
+                </h2>
+                <div class="Card Card_Animated">
                     <p>
                         GitHubは単なる「置き場」ではなく、ソースコードのバージョン管理(リポジトリ)、タスク管理(Issues)、Web公開(Pages)、作業の自動化(Actions)など、開発に必要な多くの機能を提供する統合プラットフォームです。
                     </p>
                     <p class="Conclusion_Text">
-                        <strong>結論:</strong> GitHubを活用することで、個人でもチームでも、開発の効率と品質を大きく向上させることができます。
+                        <i class="octicon octicon-light-bulb Conclusion_Icon"></i> <strong>結論:</strong> GitHubを活用することで、個人でもチームでも、開発の効率と品質を大きく向上させることができます。
                     </p>
                 </div>
             </section>
